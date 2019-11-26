@@ -48,11 +48,5 @@ class CarTest {
                 .isThrownBy(() -> new Car(null, 1));
     }
 
-    @Test
-    void move() {
-        Car car = new Car("name", 0);
-        car.move(new TestMovingStrategy());
-        assertThat(car.isInPosition(1)).isTrue();
-    }
 }
 

@@ -33,7 +33,7 @@ public class StringCalculator {
 
     private boolean checkNegativeNumber(int number) {
         if (number < 0) {
-            throw new RuntimeException();
+            throw new CustomException("nagative value in calculator", new RuntimeException());
         }
         return true;
     }
